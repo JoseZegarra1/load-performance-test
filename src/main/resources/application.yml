@@ -1,0 +1,18 @@
+server:
+  port: 8089
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://containers-us-west-4.railway.app:7666/railway
+    username: postgres
+    password: CjNa1LivjRBE3AUSPiCB
+    pool:
+      enabled: true
+      initial-size: 1
+      max-size: 1
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
